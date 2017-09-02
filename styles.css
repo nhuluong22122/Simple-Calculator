@@ -1,0 +1,87 @@
+#input{
+	height: 50px;
+	width: 100%;
+	font-size: 1.5em;
+	color: black;
+	padding:20px;
+	text-align: right;
+	overflow: hidden;
+}
+#output {
+	height: 100px;
+	width: 100%;
+	font-size: 3em;
+	color: black;
+	padding: 20px;
+	text-align: right;
+	overflow: hidden;
+}
+#myCalculator{
+	-webkit-border-radius: 15px; 
+	margin-right: auto;
+	margin-left: auto;	
+	margin-top: 100vh;
+	width: 479px;
+	background: linear-gradient(to top, #33ccff 0%, #ccff99 100%);
+	height: 455px;
+	padding: 5px;
+}
+.cbutton{
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-color: #FFFFFF;
+	opacity: 0.5;
+	color: black;
+	font-size: 2em;
+	width: 100px;
+	padding: 10px;
+	margin: 5px;
+}
+.slide-top {
+	-webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-webkit-animation-delay: 2s;
+}
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-145%);
+  }
+}
+
+/* Google Fonts */
+
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: "Dancing Script";  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 6em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 300%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1.5s steps(30) 1s both,
+             blinkTextCursor 500ms steps(30) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 6em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
